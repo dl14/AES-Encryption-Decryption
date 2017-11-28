@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>AES Encryption/Decryption</h1>
+    <form action="/mainpage" method="POST">
+        Plaintext (hex string): <br/>
+        <input type="text" name="plaintext"><br/>
+        Inital Key (hex string): <br/>
+        <input type="text" name="initialKey"><br/>
+        <input type="submit" value="Encrypt">
+    </form>
+    <br/>
+    <form action="/decrypt" method="POST">
+        Ciphertext (hex string): <br/>
+        <input type="text" name="ciphertext_d"><br/>
+        Inital Key (hex string): <br/>
+        <input type="text" name="initialKey_d"><br/>
+        <input type="submit" value="Decrypt">
+    </form>
+
+    <br/>
+    <b>Encryption:</b>
+    <br/>
+    Plaintext: {{ plaintext }} <br/>
+    Initial Key: {{ initialKey }} <br/>
+    Solved Ciphertext: {{ciphertext}}<br/>
+    <br/>
+    <b>Decryption:</b>
+    <br/>
+    Ciphertext: {{ ciphertext_d}} <br/>
+    Initial Key: {{ initialKey_d }} <br/>
+    Solved Plaintext: {{ plaintext_d }}
+</body>
+</html>
