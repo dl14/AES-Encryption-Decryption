@@ -1,5 +1,7 @@
 # AES Encryption and Decryption
-Instructions:
+Visit: https://aes-encryption-decryption.herokuapp.com/mainpage
+
+Instructions to run locally:
 1. Run ```python app.py``` in the directory
 2. Access the webpage shown on the terminal ```127.0.0.1:5000``` and add ```\mainpage``` to the end of the URL
 3. Enter hex strings (0 - F) for the plaintext (or ciphertext)
